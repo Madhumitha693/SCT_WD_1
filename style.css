@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar{
+    position: sticky;           /**sticky : nav bar remains constant in all pages**/
+    top:0;                      /**nav bar styling**/
+    left:0;
+    z-index:100;
+    padding:.5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0);
+    background-color: black;
+}
+.navbar-brand{
+    font-size: 25px;
+    font-weight:800 ;
+    color:#29f700 !important;
+}
+#navbarSupportedContent a{
+    color:white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{     /**hover : moving cursor**/
+    border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{      /**sign in button**/
+    background-color: #29f700;
+    width:5rem;
+    border-radius: 5rem;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/***Home***/
+#home{
+    background:url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 7px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:0px 1px 0px #CCC,  /**shadow effect:letters appear in 3D effect**/
+                0px 2px 0px #CCC,
+                0px 3px 0px #CCC,
+                0px 4px 0px #CCC,
+                0px 5px 0px #CCC,
+                0px 6px 0px #CCC,
+                0px 7px 0px #CCC;
+}
+#home p{
+    font-size:25px;
+    color: white;
+    font-style:italic;
+
+}
+#home .input-group{
+    width: 40%;
+    height: 45px;
+}
+.signin{
+    background: #008000 !important;
+    color: white !important;
+    box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+}
+#about{
+    background:#008000;
+}
+#about h1{
+    font-weight: 800;
+    font-size: 50px;
+    color:white;
+}
+#about p{
+    color:white;
+}
+/****Product***/
+#product{
+    background:#e5e3e3;
+}
+#product h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+#product img{
+    align-self:center;
+    padding-top: 8px;
+    width:200px;
+    height: 200px;
+}
+.card{
+    width:250px;
+    height:300px;
+    background: #e5e3e3;
+    border:none !important;
+    box-shadow:15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;      /**newmorphism effect**/
+    border-radius: 20px !important;
+    overflow:hidden;
+    justify-content: center;
+    align-items:center;
+    margin:20px 60px;     
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align:left;
+}
+.card:hover{
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    transition:.2s;
+}
+#contact{
+    background-color:#e5e3e3;
+}
+#contact h1{
+    font-weight: 700;
+    font-size: 50px;
+}
+#contact h6{
+    font-style: oblique;
+    color:#008000;
+    font-weight: 500;
+    font-size: small;
+}
+#contact h5{
+    font-style:oblique!important;
+    color:black;
+}
+.star-rating{
+    color: rgb(255, 213, 0);
+    size: 20rem;
+}
